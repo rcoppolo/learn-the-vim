@@ -101,6 +101,7 @@ body.deck-container {
   outline: none;
 }
 .deck-container ul, .deck-container ol {
+  list-style: none;
   margin-left: 2em;
   vertical-align: top;
 }
@@ -272,7 +273,7 @@ body.deck-container {
   font-style: italic;
 }
 .slide li {
-  padding: .25em 0;
+  padding: .5em 0;
   vertical-align: middle;
 }
 
@@ -402,4 +403,8 @@ body.deck-container {
   script {
     display: none;
   }
+}
+
+p.footnote {
+  font-size: .75em;
 }

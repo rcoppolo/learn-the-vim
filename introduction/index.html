@@ -7,11 +7,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	
-	<title>Getting Started with deck.js</title>
-	
-	<meta name="description" content="A jQuery library for modern HTML presentations">
-	<meta name="author" content="Caleb Troughton">
-	<meta name="viewport" content="width=1024, user-scalable=no">
+	<title>Learn the Vim</title>
 	
 	<!-- Core and extension CSS files -->
 	<link rel="stylesheet" href="../core/deck.core.css">
@@ -34,138 +30,211 @@
 <body class="deck-container">
 
 <!-- Begin slides -->
-<section class="slide" id="title-slide">
-	<h1>Getting Started with deck.js</h1>
+<section class="slide">
+	<h1>Learn to do the Vim.</h1>
 </section>
 
 <section class="slide" id="how-to-overview">
-	<h2>How to Make a Deck</h2>
-	<ol>
-		<li>
-			<h3>Write Slides</h3>
-			<p>Slide content is simple&nbsp;HTML.</p>
-		</li>
-		<li>
-			<h3>Choose Themes</h3>
-			<p>One for slide styles and one for deck&nbsp;transitions.</p>
-		</li>
-		<li>
-			<h3>Include Extensions</h3>
-			<p>Add extra functionality to your deck, or leave it stripped&nbsp;down.</p>
-		</li>
-	</ol>
-</section>
-
-<section class="slide" id="markup">
-	<h2>The Markup</h2>
-	<p>Slides are just HTML elements with a class of <code>slide</code>.</p>
-	<pre><code>&lt;section class=&quot;slide&quot;&gt;
-   &lt;h2&gt;How to Make a Deck&lt;/h2&gt;
-   &lt;ol&gt;
-      &lt;li&gt;
-         &lt;h3&gt;Write Slides&lt;/h3&gt;
-         &lt;p&gt;Slide content is simple HTML.&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-         &lt;h3&gt;Choose Themes&lt;/h3&gt;
-         &lt;p&gt;One for slide styles and one for deck transitions.&lt;/p&gt;
-      &lt;/li&gt;
-      &hellip;
-   &lt;/ol&gt;
-&lt;/section&gt;</code></pre>
-</section>
-
-<section class="slide" id="themes">
-	<h2>Style Themes</h2>
-	<p>Customizes the colors, typography, and layout of slide&nbsp;content.</p>
-	<pre><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;/path/to/css/style-theme.css&quot;&gt;</code></pre>
-	<h2>Transition Themes</h2>
-	<p>Defines transitions between slides using CSS3 transitions.  Less capable browsers fall back to cutaways. But <strong>you</strong> aren&rsquo;t using <em>those</em> browsers to give your presentations, are&nbsp;you&hellip;</p>
-	<pre><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;/path/to/css/transition-theme.css&quot;&gt;</code></pre>
-</section>
-
-<section class="slide" id="extensions">
-	<h2>Extensions</h2>
-	<p>Core gives you basic slide functionality with left and right arrow navigation, but you may want more. Here are the ones included in this&nbsp;deck:</p>
-	
+	<h2>What's this Vim thing anyway?</h2>
 	<ul>
-		<li class="slide" id="extensions-goto">
-			<strong>deck.goto</strong>: Adds a shortcut key to jump to any slide number.  Hit g, type in the slide number, and hit&nbsp;enter.
+		<li>
+			<h3>Vim is a text "editor"</h3>
+			<h4>It shines at manipulating text, not just typing it in.</h4>
 		</li>
-		
-		<li class="slide" id="extensions-hash">
-			<strong>deck.hash</strong>: Enables internal linking within slides, deep linking to individual slides, and updates the address bar &amp; a permalink anchor with each slide&nbsp;change.
+		<li>
+			<h3>Vim is old</h3>
+			<h4>It's an extension of Vi, which came out in 1976*.</h4>
 		</li>
-
-		<li class="slide" id="extensions-menu">
-			<strong>deck.menu</strong>: Adds a menu view, letting you see all slides in a grid. Hit m to toggle to menu view, continue navigating your deck, and hit m to return to normal view. Touch devices can double-tap the deck to switch between&nbsp;views.
+		<li>
+			<h3>Vim is keyboard based</h3>
+      <h4>You will never even have to reach for the arrow keys, let alone the mouse.</h4>
 		</li>
-
-		<li class="slide" id="extensions-navigation">
-			<strong>deck.navigation</strong>: Adds clickable left and right buttons for the less keyboard&nbsp;inclined.
-		</li>
-
-		<li class="slide" id="extensions-status">
-			<strong>deck.status</strong>: Adds a page number indicator. (current/total)
-		</li>
-
-		<li class="slide" id="extensions-scale">
-			<strong>deck.scale</strong>: Scales each slide to fit within the deck container using CSS Transforms for those browsers that support them.
+		<li>
+			<h3>Vim is everywhere</h3>
+      <h4>You'll be right at home on remote servers.</h4>
 		</li>
 	</ul>
-	
-	<p class="slide" id="extension-folders">Each extension folder in the download package contains the necessary JavaScript, CSS, and HTML&nbsp;files. For a complete list of extension modules included in deck.js, check out the&nbsp;<a href="http://imakewebthings.github.com/deck.js/docs">documentation</a>.</p>
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <p class='footnote'>* Bohemian Rhapsody also came out in 1976.</p>
 </section>
 
-<section class="slide" id="nested">
-	<h2>Nested Slides</h2>
-	<p>That last slide had a few steps.  To create substeps in slides, just nest them:</p>
-	<pre><code>&lt;section class=&quot;slide&quot;&gt;
-  &lt;h2&gt;Extensions&lt;/h2&gt;
-  &lt;p&gt;Core gives you basic slide functionality...&lt;/p&gt;		
-  &lt;ul&gt;
-     &lt;li class=&quot;slide&quot;&gt;
-        &lt;h3&gt;deck.goto&lt;/h3&gt;
-        &lt;p&gt;Adds a shortcut key to jump to any slide number...&lt;/p&gt;
-     &lt;/li&gt;
-     &lt;li class=&quot;slide&quot;&gt;...&lt;/li&gt;	
-     &lt;li class=&quot;slide&quot;&gt;...&lt;/li&gt;
-     &lt;li class=&quot;slide&quot;&gt;...&lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/section&gt;</code></pre>
+<section class="slide">
+	<h2>How to get started</h2>
+	<ul>
+    <li>
+      <h3>Do vimtutor!</h3>
+      <h4>Open a terminal and type "vimtutor".</h4>
+    </li>
+    <li>
+      <h3>"Learn Vim Progressively"</h3>
+      <ol>
+        <li>Install Vim (not required).</li>
+        <li>Launch Vim.</li>
+        <li>DO NOTHING...</li>
+      </ol>
+    </li>
+  </ul>
 </section>
 
-<section class="slide" id="elements-images">
-	<h2>Other Elements: Images</h2>
-	<img src="http://placekitten.com/600/375" alt="Kitties">
-	<pre><code>&lt;img src=&quot;http://placekitten.com/600/375&quot; alt=&quot;Kitties&quot;&gt;</code></pre>
+<section class="slide" >
+	<h2>Learn Vim Progressively</h3>
+  <h4><a href="http://yannesposito.com/Scratch/en/blog/Learn-Vim-Progressively/">This guy</a> thinks you should start by learning the most essential commands and just plugging away.</h4>
+  <br />
+  <h5>Otherwise the vast number of keyboard shortcuts will overwhelm and discourage you.</h5>
 </section>
 
-<section class="slide" id="elements-blockquotes">
-	<h2>Other Elements: Blockquotes</h2>
-	<blockquote cite="http://example.org">
-		<p>Food is an important part of a balanced diet.</p>
-		<p><cite>Fran Lebowitz</cite></p>
-	</blockquote>
-	<pre><code>&lt;blockquote cite=&quot;http://example.org&quot;&gt;
-  &lt;p&gt;Food is an important part of a balanced diet.&lt;/p&gt;
-  &lt;p&gt;&lt;cite&gt;Fran Lebowitz&lt;/cite&gt;&lt;/p&gt;
-&lt;/blockquote&gt;</code></pre>
+<section class="slide" >
+  <h2>So what are these "essential" commands?</h2>
+  <h4>You move around with <code>h,j,k,l</code>.*</h4>
+  <br />
+  <h4><code>i</code> gets you into insert mode (where you can type).</h4>
+  <br />
+  <h4><code>ESC</code> gets you out of insert mode.</h4>
+  <br />
+  <h4><code>:w</code> saves your file.</h4>
+  <br />
+  <h4><code>:q</code> quits. (You can combine the last two commands with <code>:wq</code>).</h4>
+  <br />
+  <h4><code>:help</code> saves your life.</h4>
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <p class='footnote'>* Think of "j" as an arrow pointing down. Even though "j"'s do not look anything like arrows pointing down.</p>
 </section>
 
-
-<section class="slide" id="elements-videos">
-	<h2>Other Elements: Video Embeds</h2>
-	<p>Embed videos from your favorite online video service or with an HTML5 video&nbsp;element.</p>
-	
-	<iframe src="http://player.vimeo.com/video/1063136?title=0&amp;byline=0&amp;portrait=0" width="400" height="225" frameborder="0"></iframe>
-	
-	<pre><code>&lt;iframe src=&quot;http://player.vimeo.com/video/1063136?title=0&amp;amp;byline=0&amp;amp;portrait=0&quot; width=&quot;400&quot; height=&quot;225&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;</code></pre>
+<section class="slide" >
+	<h2>Baby steps...</h2>
+  <h4>These commands work in Vim's "normal" mode where you can't actually insert text:</h4>
+  <br />
+  <h4><code>u</code> undos your last completed command.</h4>
+  <br />
+  <h4><code>x</code> deletes the character under the cursor.</h4>
+  <br />
+  <h4><code>dd</code> deletes the current line.</h4>
+  <br />
+  <h4><code>p</code> pastes.</h4>
+  <br />
+  <h4><code></code></h4>
 </section>
 
-<section class="slide" id="digging-deeper">
-	<h2>Digging Deeper</h2>
-	<p>If you want to learn about making your own themes, extending deck.js, and more, check out the&nbsp;<a href="../docs/">documentation</a>.</p>
+<section class="slide" >
+	<h2>Basic movement...</h2>
+  <h4><code>0</code> goes to the first column of the line.</h4>
+  <br />
+  <h4><code>$</code> goes to the end of the line.</h4>
+  <br />
+  <h4><code>w</code> moves forward one word (backwards is <code>b</code>).</h4>
+  <br />
+  <h4><code>A</code> inserts at the end of the line (<code>I</code> does the same at the beginning).</h4>
+  <br />
+  <h4><code>G</code> moves to the last line (<code>gg</code> goes to the first).</h4>
+  <br />
+</section>
+ 
+<section class="slide" >
+	<h2>Fancy stuff...</h2>
+  <h4>PROTIP: You can prefix any command with a number and Vim will execute that command <em>that many times</em>.</h4>
+  <br />
+  <h4>For instance: <code>5dd</code>  deletes 5 lines.</h4>
+  <br />
+  <h4><code>o</code> inserts a line below the cursor (<code>O</code> does the same thing but above the cursor).</h4>
+  <br />
+  <h4><code>yy</code> copies the current line.</h4>
+  <br />
+  <h4><code>cw</code> changes the word (automatically pops you into insert mode).</h4>
+  <br />
+  <h4><code>.</code> repeats the last completed command.</h4>
+  <br />
+  <h4><code></code></h4>
+</section>
+
+<section class="slide" >
+	<h2>This is only the begininng...</h2>
+  <h4>Here are some commands I learned in the process of creating this slideshow:</h4>
+  <br />
+  <h4><code>dit</code> deletes everything inside the html tags that your cursor is inside.</h4>
+  <br />
+  <h4><code>t[any character]</code> goes to just before that character (<code>T</code> does the same thing backwards).</h4>
+  <br />
+  <h4>Thus <code>dt[any character]</code> deletes everything up to that character.</h4>
+</section>
+
+<section class="slide" >
+  <h2>Practice makes perfect</h2>
+  <h4>I've been learning Vim for several months, and I've still only scratched the surface.</h4>
+  <br />
+  <h4>But my productivity should skyrocket any day now.</h4>
+</section>
+
+<section class="slide" >
+<h2>Here's an absurd amount of links and resources:</h3>
+<p><a href="http://stevelosh.com/blog/2010/09/coming-home-to-vim/">http://stevelosh.com/blog/2010/09/coming-home-to-vim/</a></p>
+
+<p><a href="http://yannesposito.com/Scratch/en/blog/Learn-Vim-Progressively/">http://yannesposito.com/Scratch/en/blog/Learn-Vim-Progressively/</a></p>
+
+<p><a href="http://blog.danielfischer.com/2010/11/19/a-starting-guide-to-vim-from-textmate/">http://blog.danielfischer.com/2010/11/19/a-starting-guide-to-vim-from-textmate/</a></p>
+
+<p><a href="http://weblog.jamisbuck.org/2008/10/10/coming-home-to-vim">http://weblog.jamisbuck.org/2008/10/10/coming-home-to-vim</a></p>
+
+<p><a href="http://stackoverflow.com/questions/1218390/what-is-your-most-productive-shortcut-with-vim/1220118#1220118">http://stackoverflow.com/questions/1218390/what-is-your-most-productive-shortcut-with-vim/1220118#1220118</a></p>
+
+<p><a href="http://www.knowvim.com/">http://www.knowvim.com/</a></p>
+
+<p><a href="https://gist.github.com/1178878">https://gist.github.com/1178878</a></p>
+
+<p><a href="http://snook.ca/archives/other/word-of-vim">http://snook.ca/archives/other/word-of-vim</a></p>
+
+<p><a href="http://www.viemu.com/vi_vim_tips.html">http://www.viemu.com/vi<em>vim</em>tips.html</a></p>
+
+<p><a href="http://rayninfo.co.uk/vimtips.html">http://rayninfo.co.uk/vimtips.html</a></p>
+
+<p><a href="http://cloudhead.io/2010/04/24/staying-the-hell-out-of-insert-mode/">http://cloudhead.io/2010/04/24/staying-the-hell-out-of-insert-mode/</a></p>
+
+<p><a href="http://jeetworks.org/node/89">http://jeetworks.org/node/89</a></p>
+
+<p><a href="http://yehudakatz.com/2010/07/29/everyone-who-tried-to-convince-me-to-use-vim-was-wrong/">http://yehudakatz.com/2010/07/29/everyone-who-tried-to-convince-me-to-use-vim-was-wrong/</a></p>
+
+<p><a href="http://wekeroad.com/2010/07/29/vim-is-your-daddy/">http://wekeroad.com/2010/07/29/vim-is-your-daddy/</a></p>
+
+<p><a href="http://nvie.com/posts/how-i-boosted-my-vim/">http://nvie.com/posts/how-i-boosted-my-vim/</a></p>
+</section>
+
+<section class="slide" >
+<h2>And here are a bunch of plugins you may find useful:</h3>
+<p><a href="https://github.com/tpope/vim-pathogen">https://github.com/tpope/vim-pathogen</a></p>
+
+<p><a href="https://github.com/tpope/vim-fugitive">https://github.com/tpope/vim-fugitive</a></p>
+
+<p><a href="https://github.com/tpope/vim-surround">https://github.com/tpope/vim-surround</a></p>
+
+<p><a href="https://github.com/tpope/vim-rails">https://github.com/tpope/vim-rails</a></p>
+
+<p><a href="https://github.com/scrooloose/nerdtree">https://github.com/scrooloose/nerdtree</a></p>
+
+<p><a href="https://github.com/scrooloose/nerdcommenter">https://github.com/scrooloose/nerdcommenter</a></p>
+
+<p><a href="https://github.com/msanders/snipmate.vim">https://github.com/msanders/snipmate.vim</a></p>
+
+<p><a href="https://github.com/tomtom/tcomment_vim">https://github.com/tomtom/tcomment_vim</a></p>
+
+<p><a href="https://github.com/bsl/obviousmode">https://github.com/bsl/obviousmode</a></p>
+
+<p><a href="https://github.com/rstacruz/sparkup">https://github.com/rstacruz/sparkup</a></p>
+
+<p><a href="https://peepcode.com/products/peepopen">https://peepcode.com/products/peepopen</a></p>
 </section>
 
 <!-- deck.navigation snippet -->
@@ -178,18 +247,6 @@
 	/
 	<span class="deck-status-total"></span>
 </p>
-
-<!-- deck.goto snippet -->
-<form action="." method="get" class="goto-form">
-	<label for="goto-slide">Go to slide:</label>
-	<input type="text" name="slidenum" id="goto-slide" list="goto-datalist">
-	<datalist id="goto-datalist"></datalist>
-	<input type="submit" value="Go">
-</form>
-
-<!-- deck.hash snippet -->
-<a href="." title="Permalink to this slide" class="deck-permalink">#</a>
-
 
 <!-- Grab CDN jQuery, with a protocol relative URL; fall back to local if offline -->
 <script src="//ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
